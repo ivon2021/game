@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Zone</title>
+    <!--Boostrap css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+<div class="container">
+      <div class="bg-warning">
+          <h3>Game Zone</h3>
+      </div>
+      <!--***************carrucel**************-->
+          <div id="carouselExampleInterval " class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="imagenes/starwar2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="imagenes/pokemongo.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/dragonball.jpg" class="d-block w-100" alt="...">
+                  </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+    
+
+      <div class="d-grid gap-2 col-xs-12 col-md-6 mx-auto p-2">
+          <button class="btn btn-primary" type="button">Ver más...</button>
+      </div>
+    </div>
+    <!--*********************texto y video*****************-->
+        <div class="container text-center">
+          <div class="row ">
+              <div class="col-xs-12 col-lg-4 ">
+                <h3>Titulo </h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit nisi aliquam ea ipsum vitae! Nulla repellendus enim et unde aspernatur modi qui ea veniam reprehenderit, aut sed sequi ab quaerat?</p>
+                  <hr>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quisquam non aperiam pariatur delectus maiores eveniet ex, earum fugiat dolor similique error dolore porro! Recusandae a dolor impedit distinctio quibusdam?</p>
+              </div>
+                <div class="col-xs-12 col-lg-8" class="video-responsive">
+                  <div class="embed-responsive embed-responsive-16by9 "class="embed-responsive-item" >
+                    <iframe  src="https://www.youtube.com/embed/ppkX8epoD9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </iframe>
+                  </div>
+                 
+                </div>
+          </div>
+      
+     
+        </div>
+
+
+        <!---*********barra de menú**************-->
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="btn1" class="nav-link"  href="#">Acerca de Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="btn2" class="nav-link" href="#">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>    
+        </div>
+
+<!--****ventana modal******-->
+<div id="modal1"  class="modal fade" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Acerca de Nosotros</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa earum atque assumenda rem accusamus deleniti dolorem aliquam maxime dicta, cumque, deserunt nostrum ut amet veritatis corrupti error repellat, nesciunt ea.</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam placeat non inventore odit pariatur aut neque eum quas iste dignissimos eos quos, laboriosam et hic earum quasi delectus fugiat. Nam.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modal2"  class="modal fade" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Contacto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre">
+            </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>         
+          <div class="mb-3">
+            <label for="comentario" class="form-label">Comentarios</label>
+            <textarea class="form-control" id="comentario" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+   <!--boostrap bundle with papper-->
+   <script src="js/jquery-3.6.0.min.js"></script> 
+   <script src="js/bootstrap.min.js"></script> 
+   <script src="app.js"></script>
+</body>
+</html>
